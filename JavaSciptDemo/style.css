@@ -1,0 +1,17 @@
+.body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 1cm;
+}
+
+.right{
+    text-align: right;
+}
+
+.box{
+    border: solid thick black;
+    padding: 1cm;
+}
+
+.center{
+    text-align: center;
+}

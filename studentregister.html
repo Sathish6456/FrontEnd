@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #p1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: larger;
+            background-color: coral;
+            color: chartreuse;
+            padding: 30mm;
+            margin: 2cm;
+            border-radius: 5mm;
+            text-align: left;
+        
+        }
+    </style>
+</head>
+<body>
+    <form methode="get" >
+        <table id="p1">
+        <tr>
+            <td>
+                <label>Student Name</label>
+            </td>
+            <td>
+                <input type="text" name="txtname" required maxlength="15" minlength="5">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Student Id</label>
+            </td>
+            <td>
+                <input type="text" name="txtid" >
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Student Roll Number</label>
+            </td>
+            <td>
+                <input type="text" name="txtnumber">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Gender</label>
+            </td>
+            <td>
+                <input type="radio" name="radGender" value="M">MALE
+            </td>
+            <td>
+                <input type="radio" name="radGender" value="F">FE-MALE
+            </td>
+        </tr>
+        <td>
+            <input type="checkbox" name="Subscription" value="YES">Actiavte The Library Management System Account
+        </td>
+        <tr>
+            <td>
+                <label>Fee</label>
+            </td>
+            <td>
+                <input type="number" name="FeeAmmount">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Date of Admission</label>
+            </td>
+            <td>
+                <input type="date" name="doa">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Departments</label>
+                <select>
+                    <option value="C">CSE</option>
+                    <option value="M">MECH</option>
+                    <option value="E">EEE</option>
+                    <option value="I">EIE</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Register">
+                <input type="reset" value="Cancel">
+            </td>
+        </tr>
+        </table>
+        </form>
+</body>
+</html>

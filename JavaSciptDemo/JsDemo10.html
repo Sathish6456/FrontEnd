@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Calc.js"></script>
+    <script>
+        function f1() {
+            var str1 = window.document.forms[0].elements[0].value;
+            var str2 = window.document.forms[0].elements[1].value;
+            var n1 = window.parseInt(str1);
+            var n2 = window.parseInt(str2);
+            var calc = new Calculator(n1, n2);
+            var result = calc.getSum();
+            window.alert(result);
+        }
+        function f2() {
+            var str1 = window.document.forms[0].elements[0].value;
+            var str2 = window.document.forms[0].elements[1].value;
+            var n1 = window.parseInt(str1);
+            var n2 = window.parseInt(str2);
+            var calc = new Calculator(n1, n2);
+            var result = calc.getSubtract();
+            window.alert(result);
+        }
+        function f3() {
+            var str1 = window.document.forms[0].elements[0].value;
+            var str2 = window.document.forms[0].elements[1].value;
+            var n1 = window.parseInt(str1);
+            var n2 = window.parseInt(str2);
+            var calc = new Calculator(n1, n2);
+            var result = calc.getMultiply();
+            window.alert(result);
+        }
+        function f4() {
+            var str1 = window.document.forms[0].elements[0].value;
+            var str2 = window.document.forms[0].elements[1].value;
+            var n1 = window.parseInt(str1);
+            var n2 = window.parseInt(str2);
+            var calc = new Calculator(n1, n2);
+            var result = calc.getDivide();
+            window.alert(result);
+        }
+    </script>
+
+</head>
+
+<body>
+    <table>
+        <form>
+            <tr>
+                <td><label>First Number</label></td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td><label>First Number</label></td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td><button onclick="f1()">Sum</button></td>
+                <td><button onclick="f2()">Subtract</button></td>
+            </tr>
+
+            <tr>
+                <td><button onclick="f3()">Multiply</button></td>
+                <td><button onclick="f4()">Divide</button></td>
+            </tr>
+
+        </form>
+    </table>
+</body>
+
+</html>

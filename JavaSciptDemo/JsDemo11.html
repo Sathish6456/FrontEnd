@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script15.js"></script>
+    <script>
+        function f1() {
+            var str1 = window.document.forms[0].elements[0].value;
+            var str2 = window.document.forms[0].elements[1].value;
+            var str3 = window.document.forms[0].elements[2].value;
+
+            var m1 = window.parseInt(str1)
+            var m2 = window.parseInt(str2)
+            var m3 = window.parseInt(str3)
+            var total = new Student(m1, m2, m3);
+            var result = total.computeTotalMarks();
+            window.alert(result);
+        }
+        function f2() {
+            var str1 = window.document.forms[0].elements[0].value;
+            var str2 = window.document.forms[0].elements[1].value;
+            var str3 = window.document.forms[0].elements[2].value;
+
+            var m1 = window.parseInt(str1)
+            var m2 = window.parseInt(str2)
+            var m3 = window.parseInt(str3)
+            var avg = new Student(m1, m2, m3);
+            var result = avg.computeaverageMarks();
+            window.alert(result);
+        }
+
+    </script>
+</head>
+
+<body>
+    <table>
+        <form>
+            <tr>
+                <td><label>Name</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label>RollNo</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label>Mark1</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label>Mark2</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label>Mark3</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><button onclick="f1()">TotalMarks</button></td>
+
+                <td><button onclick="f2()">AverageMarks</button></td>
+            </tr>
+        </form>
+    </table>
+</body>
+
+</html>
